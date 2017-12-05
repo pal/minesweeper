@@ -1,5 +1,10 @@
+* {
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+  }
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font: 14px;
   margin: 20px;
 }
 
@@ -18,10 +23,12 @@ ol, ul {
 }
 
 .square {
-  background: #ccc;
-  border: 1px solid #999;
+  background: #C0C0C0;
+  
+  border: 3px outset;
+  border-style:outset;
   float: left;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 34px;
   height: 34px;
@@ -32,22 +39,51 @@ ol, ul {
   width: 34px;
 }
 
+.empty {
+    color: darkgray;
+    border: 3px outset;
+}
+
 .bomb {
     color: pink;
-    
+    background-image: url("https://lh4.ggpht.com/d4ThZdKjGANziFu-sr_CElac-kjeZ2LbXeVRkTNk9RJhzb_4qFqGooCprBlalb3yLcgo=w50");
+    border: 3px outset;
 }
 
 .free {
     color: green;
-}
-
-.empty {
-    color: darkgray;
+    border: 1px solid #808080;
 }
 
 .exploded {
     color: red;
 }
+
+.val-1 {
+    color: #0000FF;
+}
+.val-2 {
+    color: #008300;
+}
+.val-3 {
+    color: #FF0000;
+}
+.val-4 {
+    color: #000083;
+}
+.val-5 {
+    color: #980000;
+}
+.val-6 {
+    color: #008482;
+}
+.val-7 {
+    color: #000000;
+}
+.val-8 {
+    color: #808080;
+}
+
 .square:focus {
   outline: none;
 }
